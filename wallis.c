@@ -30,7 +30,7 @@ float wallis_pi(int n)
   for(int i=1;i<n;i++)
   {
     x=(4*i*i);
-    y*=x/x-1;
+    y*=(x/(x-1));
   }
  pi=2*y;
   return pi;
