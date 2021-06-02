@@ -6,6 +6,7 @@
 float mc_pi(int x)
 {
   int n=0;
+  int m=x;
   float a,b,c;
   for(int i=0;i<x;i++)
   {
@@ -15,7 +16,7 @@ float mc_pi(int x)
     {
       n++;
     } 
-    c=(n/x)*4;
+    c=((n/m)*4);
     return c;
   }
   
