@@ -43,17 +43,17 @@ int main(void) {
 float mc_pi(int x)
 {
   int n=0;
-  int m=x;
-  float a,b,c;
+  float a,b,c,d;
   for(int i=0;i<x;i++)
   {
     a=frandom();
     b=frandom();
-    if(((a*a)+(b*b))<=1)
+    d=sqrt((a*a)+(b*b));
+    if(d<=1)
     {
       n++;
     } 
-    c=((n/m)*4);
+    c=(((float)n/(float)x)*4.0);
     return c;
   }
 }
