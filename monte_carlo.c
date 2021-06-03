@@ -48,14 +48,15 @@ float mc_pi(int x)
   {
     a=frandom();
     b=frandom();
-    d=sqrt((a*a)+(b*b));
+    d=((a*a)+(b*b));
     if(d<=1)
     {
       n++;
     } 
+  }
     c=(((float)n/(float)x)*4.0);
     return c;
-  }
+  
 }
 
 
