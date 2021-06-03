@@ -3,22 +3,7 @@
 #include <stdio.h>
 #include <math.h>
 
-float mc_pi(int x)
-{
-  int n=0;
-  int m=x;
-  float a,b,c;
-  for(int i=0;i<x;i++)
-  {
-    a=frandom();
-    b=frandom();
-    if(((a*a)+(b*b))<=1)
-    {
-      n++;
-    } 
-    c=((n/m)*4);
-    return c;
-  }
+float mc_pi(int );
   
 
 float frandom() {
@@ -55,5 +40,22 @@ int main(void) {
   }
 }
 
+float mc_pi(int x)
+{
+  int n=0;
+  int m=x;
+  float a,b,c;
+  for(int i=0;i<x;i++)
+  {
+    a=frandom();
+    b=frandom();
+    if(((a*a)+(b*b))<=1)
+    {
+      n++;
+    } 
+    c=((n/m)*4);
+    return c;
+  }
+}
 
 
