@@ -6,10 +6,10 @@
 float wallis_pi(int n)
 {
   float x,pi;
-  float y=1;
+  float y=1.0;
   for(int i=1;i<n;i++)
   {
-    x=(4*i*i);
+    x=((float)(4*i*i));
     y*=(x/(x-1));
   }
  pi=2*y;
